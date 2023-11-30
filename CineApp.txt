@@ -1,0 +1,6 @@
+Check List
+1. Clone Repository
+2. Data base design
+3. Entity relationship design 
+4. Api Develop
+5. Endpoint testing

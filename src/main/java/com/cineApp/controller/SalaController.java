@@ -36,4 +36,12 @@ public class SalaController {
         salaService.deleteSalaById(id);
 
     }
+    @PutMapping("/{id}")
+    public Sala updateSala(@PathVariable Long id, Sala salaIncoming){
+        Sala sala = salaService.finById(id);
+        sala.setName(salaIncoming.getName());
+        sala.setCapacity(salaIncoming.getCapacity());
+        return salaService.saveSala(sala);
+    }
+
 }
